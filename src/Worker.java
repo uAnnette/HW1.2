@@ -23,7 +23,9 @@ public class Worker {
             if (i == 33) {
                 errorCallback.onError("Задача " + i + " завершена с ОШИБКОЙ");
             }
-            callback.onDone("Задача " + i + " выполнена");
+            else {
+                callback.onDone("Задача " + i + " выполнена");
+            }
         }
     }
 }
